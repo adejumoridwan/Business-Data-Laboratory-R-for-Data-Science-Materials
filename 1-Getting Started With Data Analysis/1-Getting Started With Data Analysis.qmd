@@ -1,0 +1,134 @@
+---
+title: "Getting Started With Data Analysis"
+author: "Adejumo Ridwan Suleiman"
+format: 
+  revealjs:
+    theme: [moon, custom-style.scss]
+    preview-links: true
+    chalkboard: 
+      boardmarker-width: 5
+from: markdown+emoji
+execute:
+  echo: true
+editor: visual
+title-slide-attributes: 
+  data-background-image: images/bdl_full_logo.jpeg
+  data-background-size: 10%
+  data-background-position: 2% 2%
+
+---
+---
+
+# Definition and Scope of Data Analysis
+
+## What is data analysis
+
+- The process of inspecting, cleaning, transforming, and modeling data.  
+- A method to discover useful information, draw conclusions, and support decision-making.  
+
+## Who is a data analyst?
+
+- A professional who interprets and transforms data into meaningful insights.  
+- A person skilled in statistics, programming, and data visualization.  
+
+## Roles of a data analyst
+
+- Collect and organize data from various sources 
+- Analyze data to identify patterns and trends  
+- Create visual representations of data  
+- Communicate findings to stakeholders and decision-makers  
+
+## Scope of Data Analysis
+
+- Applies to various industries, such as finance, healthcare, marketing, and education  
+- Involves different types of data, such as structured data. 
+
+# Data Analysis Proces
+
+## What is a Data Analysis Process?
+
+Data analysis process involves a structured approach to identify problems, gather relevant data, clean and preprocess data, extract insights, and communicate findings to stakeholders.
+
+## The Data Analysis Process
+
+- Problem Statement
+- Data Collection
+- Data Cleaning
+- Extracting Insights
+- Communication and Interpretation
+
+## Problem Statement
+
+A clear problem statement is the starting point of the data analysis process. It defines the purpose of the analysis and helps in identifying the data needed to address the problem.
+
+## Data Collection 
+
+Data collection involves gathering relevant data from various sources. It is essential to ensure that the data collected is accurate, complete, and unbiased to obtain reliable insights.
+
+## Extracting Insights
+
+Extracting insights involves the application of statistical and analytical techniques to identify patterns, relationships, and trends in the data. It enables the identification of opportunities and areas of improvement.
+
+## Communication and Interpretation
+
+The final step of the data analysis process is to communicate the insights to stakeholders. It involves the creation of data visualizations and reports to present the findings effectively. The interpretation of the insights is critical in making data-driven decisions.
+
+# Data Analyst Tools
+
+## Programming Languages
+
+- Python
+- R
+
+## Databases
+
+- Relational Databases
+- NoSQL Databases
+
+## Business Intelligence Tools
+
+- Power BI
+- Tableau
+- Google Data Studio
+
+## Spreadsheets
+
+- Microsoft Excel
+- Google Sheet
+
+# Applications of Data Analysis
+
+## Marketing and Advertising
+
+- Analyzing customer data to identify patterns and preferences  
+- Understanding the impact of campaigns on sales
+Personalizing marketing strategies for individual customers  
+- Forecasting sales trends and identifying opportunities for growth  
+
+## Healthcare
+
+- Analyzing patient data to identify risk factors for diseases   
+- Developing personalized treatment plans based on individual patient data  
+- Identifying trends in patient outcomes to improve quality of care  
+- Analyzing public health data to identify disease outbreaks and trends  
+
+## Finance
+
+- Analyzing financial data to identify trends and opportunities for investment  
+- Detecting fraudulent activities in financial transactions  
+- Forecasting market trends and investment opportunities  
+- Analyzing credit risk to make informed lending decisions  
+
+## Human Resources
+- Analyzing employee data to identify patterns in recruitment and retention  
+- Identifying areas for employee training and development  
+- Analyzing employee performance data to improve productivity and quality of work  
+- Forecasting workforce needs and identifying skills gaps  s
+
+## Sports
+
+- Analyzing athlete performance data to identify strengths and weaknesses  
+- Developing game strategies based on opponent analysis  
+- Identifying trends in player injuries to improve injury prevention strategies.  
+
+
