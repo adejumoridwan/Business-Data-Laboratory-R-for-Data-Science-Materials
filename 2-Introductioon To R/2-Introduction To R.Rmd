@@ -1,0 +1,150 @@
+---
+title: "Getting Started With Data Analysis"
+author: "Adejumo Ridwan Suleiman"
+---
+
+## R Data Types
+
+In R, data types represent the different types of values that can be stored in variables or data structures. The following are the commonly used data types in R.
+
+### Numeric Data Type
+Numeric data type is used to represent numbers, including integers and floating-point numbers.
+```{r}
+# Example:
+x <- 10
+y <- 3.14
+```
+
+### Character Data Type
+Character data type is used to represent strings of text.
+```{r}
+# Example:
+name <- "John Doe"
+
+```
+
+### Logical Data Type
+Logical data type is used to represent logical values - TRUE or FALSE.
+```{r}
+# Example:
+is_raining <- TRUE
+is_sunny <- FALSE
+
+```
+
+### Factor Data Type
+Factor data type is used to represent categorical variables. It is useful for handling data with a limited number of possible values.
+```{r}
+# Example:
+gender <- factor(c("male", "female", "male", "male", "female"))
+
+```
+
+### Date and Time Data Types
+R has built-in data types for representing dates and times.
+```{r}
+# Example:
+date_today <- Sys.Date()  # returns today's date
+time_now <- Sys.time()    # returns the current time
+
+```
+
+### Complex Data Type
+Complex data type is used to represent complex numbers.
+
+```{r}
+# Example:
+z <- 3 + 4i
+
+```
+
+
+### Raw Data Type
+Raw data type is used to represent binary data.
+```{r}
+# Example:
+x <- charToRaw("hello world")
+```
+
+### Exercise:
+
+Create a vector that stores the ages of a group of people. The ages should be numeric. Create a factor variable that stores the gender of each person. Finally, create a variable that stores the current date and time.
+
+
+## R Operators
+
+Operators are used to perform operations on values in R. There are several types of operators in R, including arithmetic operators, assignment operators, comparison operators, logical operators, and more.
+
+### Arithmetic Operators
+Arithmetic operators are used to perform mathematical operations on numeric values.
+```{r}
+# Example:
+x <- 10
+y <- 3
+x + y   # addition
+x - y   # subtraction
+x * y   # multiplication
+x / y   # division
+x ^ y   # exponentiation
+x %% y  # modulus
+x %/% y # integer division
+```
+
+### Assignment Operators
+Assignment operators are used to assign values to variables.
+```{r}
+# Example:
+x <- 10
+y <- 3
+x <- y   # assign the value of y to x
+
+```
+
+### Comparison Operators
+Comparison operators are used to compare values and return logical values (TRUE or FALSE).
+```{r}
+# Example:
+x <- 10
+y <- 3
+x == y  # equal to
+x != y  # not equal to
+x > y   # greater than
+x < y   # less than
+x >= y  # greater than or equal to
+x <= y  # less than or equal to
+
+```
+
+
+### Logical Operators
+Logical operators are used to combine logical values and return logical values.
+```{r}
+# Example:
+x <- TRUE
+y <- FALSE
+x & y   # AND
+x | y   # OR
+!x      # NOT
+
+```
+
+### Other Operators
+Other Operators
+R has other operators, including:
+
+- Membership Operators: `%in%` is used to check if an element is a member of a vector.
+- Concatenation Operators: `c()` is used to concatenate vectors.
+- Ternary Operator: `ifelse()` is used to return values based on a logical condition.
+```{r}
+# Example:
+x <- 1:5
+3 %in% x             # returns TRUE
+y <- c(6, 7, 8)
+z <- c(x, y)         # concatenates x and y
+result <- ifelse(x > 3, "high", "low")  # returns "high" if x > 3, "low" otherwise
+
+```
+
+### Exercise:
+
+Write an R code that creates two variables x and y that store any numeric values of your choice. Using the comparison operators, check if x is greater than y and store the result in a variable called "is_greater". Print out the value of "is_greater".

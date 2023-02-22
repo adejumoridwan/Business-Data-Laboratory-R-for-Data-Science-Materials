@@ -1,0 +1,68 @@
+---
+title: "Introduction to R"
+author: "Adejumo Ridwan Suleiman"
+format: 
+  revealjs:
+    theme: [moon, custom-style.scss]
+    preview-links: true
+    chalkboard: 
+      boardmarker-width: 5
+from: markdown+emoji
+execute:
+  echo: true
+editor: visual
+title-slide-attributes: 
+  data-background-image: images/bdl_full_logo.jpeg
+  data-background-size: 10%
+  data-background-position: 2% 2%
+---
+
+# Introduction to R
+
+- R is a programming language and software environment for statistical computing and graphics.
+- It was developed by Ross Ihaka and Robert Gentleman in 1993.
+- It is open-source and freely available for use.
+- R has become a popular tool for data analysis, data visualization, and machine learning.
+
+## Overview of R and its features
+
+- R is designed for data analysis and statistical computing.
+- It has a vast library of packages for various data analysis tasks.
+- R has a command-line interface and can be extended with graphical user interfaces like RStudio.
+- R has capabilities for data manipulation, visualization, modeling, and reporting.
+
+## Setting up R environment
+
+- R can be downloaded from the official website (www.r-project.org).
+- It is available for Windows, Mac, and Linux operating systems.
+- After installation, R can be run from the command line or a graphical user interface like RStudio.
+
+## Setting up R Studio
+
+- RStudio is an integrated development environment (IDE) for R.
+- It provides a user-friendly interface for working with R.
+RStudio has many features, including code highlighting, debugging, and package management.
+- RStudio can be downloaded from the official website (www.rstudio.com).
+
+## R and R Studio
+
+- R is a programming language and software environment for statistical computing and graphics.
+- RStudio is an integrated development environment (IDE) for R.
+- R provides a command-line interface, while RStudio provides a graphical user interface.
+- R is used for data analysis and statistical computing, while RStudio is used for developing and managing R code.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
