@@ -148,3 +148,160 @@ result <- ifelse(x > 3, "high", "low")  # returns "high" if x > 3, "low" otherwi
 ### Exercise:
 
 Write an R code that creates two variables x and y that store any numeric values of your choice. Using the comparison operators, check if x is greater than y and store the result in a variable called "is_greater". Print out the value of "is_greater".
+
+## R Functions
+
+R functions are reusable code blocks that can take input arguments and perform specific tasks. In this article, we will discuss the basics of R functions, how to create them, and how to use them with examples, detailed explanations, and exercises.
+
+### Creating R functions
+To create an R function, we use the function keyword followed by the function name, input arguments (if any), and the code block that defines what the function does. Here's an example of a simple R function that adds two numbers:
+
+```{r}
+add_two_numbers <- function(x, y) {
+  result <- x + y
+  return(result)
+}
+```
+
+In this example, add_two_numbers is the name of the function, and it takes two input arguments x and y. The function code block adds the two input arguments and stores the result in the result variable. The return statement is used to return the result of the function.
+
+### Using R functions
+Once we have created an R function, we can use it by calling its name and passing the required input arguments. Here's an example of using the add_two_numbers function we created earlier:
+
+```{r}
+sum <- add_two_numbers(5, 10)
+print(sum)  # Output: 15
+```
+In this example, we pass the values 5 and 10 as input arguments to the add_two_numbers function, which returns the sum of the two numbers as 15. We then store this value in the sum variable and print it to the console using the print function.
+
+### Function arguments
+R functions can have zero or more input arguments. Input arguments are enclosed in parentheses after the function name, separated by commas. Here's an example of a function that takes no input arguments:
+```{r}
+hello_world <- function() {
+  print("Hello, world!")
+}
+```
+
+In this example, the hello_world function takes no input arguments and simply prints "Hello, world!" to the console when called.
+
+R functions can also have default values for input arguments. If a default value is provided, the input argument becomes optional, and if the argument is not provided when the function is called, the default value is used. Here's an example of a function with a default value for an input argument:
+
+```{r}
+greet_person <- function(name = "John") {
+  print(paste("Hello,", name))
+}
+```
+
+In this example, the greet_person function takes an input argument name, which has a default value of "John". If we call the function without providing a value for name, it will use the default value and print "Hello, John" to the console. If we provide a value for name, the function will use that value instead.
+
+### Function return values
+R functions can return a single value or multiple values. To return a value, we use the return statement followed by the value we want to return. If no return statement is used, the function will return the last value calculated in the code block. Here's an example of a function that returns a single value:
+
+```{r}
+multiply_two_numbers <- function(x, y) {
+  result <- x * y
+  return(result)
+}
+```
+
+In this example, the multiply_two_numbers function takes two input arguments x and y, multiplies them together, and returns the result.
+
+R functions can also return multiple values using a list. Here's an example of a function that returns multiple values:
+
+```{r}
+divide_two_numbers <- function(x, y) {
+  quotient <- x / y
+  remainder <- x %% y
+  return(list(quotient, remainder))
+}
+```
+
+### Exercises
+- Write a function count_words that takes in a string and returns the number of words in the string.
+- Write a function mean_sd that takes in a vector of numeric values and returns a list with the mean and standard deviation of the values.
+
+
+
+## Vectors
+Vectors are an essential data structure in R, and they are used to store collections of values that are of the same type. Vectors in R can be of different types, including numeric, character, logical, complex, and raw. In this article, we will discuss creating vectors, indexing and slicing, and vector operations in R.
+
+### Creating Vectors
+
+To create a vector in R, we use the c() function, which stands for concatenate. We pass values to the c() function, and it returns a vector with those values. Here are some examples:
+
+#### Numeric Vector:
+```{r}
+# create a numeric vector
+num_vec <- c(1, 2, 3, 4, 5)
+print(num_vec) # output: [1] 1 2 3 4 5
+```
+
+#### Character Vector:
+```{r}
+# create a character vector
+char_vec <- c("apple", "banana", "cherry")
+print(char_vec) # output: [1] "apple"  "banana" "cherry"
+```
+
+#### Logical Vector
+```{r}
+# create a logical vector
+log_vec <- c(TRUE, FALSE, TRUE)
+print(log_vec) # output: [1]  TRUE FALSE  TRUE
+```
+
+### Indexing and Slicing
+We can access elements of a vector using indexing and slicing. Indexing means accessing a single element of a vector, while slicing means accessing a range of elements. In R, indexing starts at 1. Here are some examples:
+```{r}
+# create a numeric vector
+num_vec <- c(1, 2, 3, 4, 5)
+
+# indexing
+print(num_vec[1]) # output: [1] 1
+
+# slicing
+print(num_vec[2:4]) # output: [1] 2 3 4
+```
+
+### Vector Operations:
+We can perform various operations on vectors in R. Here are some examples:
+
+#### Arithmetic Operations:
+We can perform arithmetic operations on vectors, such as addition, subtraction, multiplication, and division. In these operations, each element of the vector is operated on individually. Here are some examples:
+```{r}
+# create two numeric vectors
+num_vec1 <- c(1, 2, 3)
+num_vec2 <- c(4, 5, 6)
+
+# addition
+print(num_vec1 + num_vec2) # output: [1] 5 7 9
+
+# multiplication
+print(num_vec1 * num_vec2) # output: [1]  4 10 18
+
+```
+
+#### Logical Operations:
+We can perform logical operations on vectors, such as AND, OR, and NOT. In these operations, each element of the vector is operated on individually. Here are some examples:
+```{r}
+# create two logical vectors
+log_vec1 <- c(TRUE, FALSE, TRUE)
+log_vec2 <- c(FALSE, TRUE, TRUE)
+
+# AND
+print(log_vec1 & log_vec2) # output:
+print(log_vec1 | log_vec2)
+```
+
+### Exercises
+- Create a vector named my_vector containing the numbers 1, 2, 3, 4, 5.
+- Create a vector named my_letters containing the letters 'a', 'b', 'c', 'd', 'e'.
+- Use the length() function to find the length of my_vector.
+- Use the class() function to determine the class of my_letters.
+- Use the sum() function to find the sum of my_vector.
+- Use the sort() function to sort my_letters in alphabetical order.
+- Use the rev() function to reverse the order of my_vector.
+- Use the [ ] operator to extract the third element of my_vector.
+- Use the [ ] operator to extract the first three elements of my_letters.
+- Use the rep() function to create a vector of the number 2 repeated 5 times.
+
